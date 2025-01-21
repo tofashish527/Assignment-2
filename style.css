@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.home{
+    color:orange ;
+}
+.about{
+    color:rgb(26, 239, 197);
+} 
+.facilities{
+    color:#54cfff;
+} 
+.admission{
+    color:#6565dd;
+}
+.logo{
+    display: flex;
+    justify-content: space-around;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+}
+nav{
+    margin: 20px 0;
+    position: relative;
+}
+.head{
+    padding-top: 20px;
+}
+.navlinks{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 40px;
+    margin-right: 40px;
+    padding-top: 20px;
+}
+.navlinks a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.btn{
+    background-color:orange ;
+    color: white;
+    padding: 5px 35px;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+}
+.menu-checkbox{
+    display: none;
+}
+.menubar{
+    display: none;
+    cursor: pointer;
+}
+.horizontal{
+    display: none;
+    height: 1px;
+    background-color: orange;
+}
+@media screen and (max-width:576px){
+    .head{
+        display: none;
+    }
+    .btn{
+        display: none;
+    }
+    .menubar{
+        display: block;
+        padding-top: 20px;
+    } 
+    .navlinks{
+        display:none;
+        flex-direction: column;
+        background-color: gainsboro;
+        position: absolute;
+        padding-bottom: 20px;
+        top: 60px;
+        right: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .menu-checkbox:checked + .menubar + .navlinks{
+        display: flex;
+    }
+    .horizontal{
+        display: block;    
+    }
+}
