@@ -113,9 +113,6 @@ p{
     margin-left: 100px;
     width: 570px;
 }
-section{
-    padding-bottom: 30px;
-}
 
 /*standard*/
 .standard{
@@ -159,9 +156,6 @@ section{
 a{
     text-decoration: none;
 }
-/* .link{
-    padding-top: 2px;
-} */
 .layer{
     padding-top: 50px;
     align-items: center;
@@ -180,15 +174,10 @@ a{
     border: none; 
 }
 
-
 /* story */
 .story{
     width: 100%;
-    justify-content: center;
-    margin: 0 auto;
-    align-items: center;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 40px;
     background: url(assets/bg.png), linear-gradient(360deg, rgba(254, 163, 1, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
 }
 h2{
@@ -202,42 +191,44 @@ h2{
     margin: 0 auto;
     margin-top: 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 24px;
 }
 .big{
+    height:580px;
+    width: 540px;
     justify-content: center;
     background-color: white;
     margin: 0 auto;
     border-radius: 8px;
-    border: 1px saddlebrown solid;
 }
 .st-img{
     object-fit: cover;
 }
 
 .two {
-    padding-bottom: 60px;
+    height:580px;
+    width: 620px;
     justify-content: center;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 24px;
-    border: 1px saddlebrown solid;
+    gap: 18px;
 }
-
-
 .card{
-     justify-content: center;
+    height:290px;
+    width:310px;
+    justify-content: center;
     margin: 0 auto;
-    border-radius: 50%;
-    overflow: hidden;
+    border-radius: 32px;
     padding: 0;
     background-color: white; 
 }
 
 .des{
-    height: 40%;
+    height: 50%;
+    text-align: justify;
+    align-items: center;
 }
 h3,h4{
     padding-top: 20px;
@@ -245,7 +236,8 @@ h3,h4{
     font-size: 1.2rem;
 }
 p{
-    padding-top: 30px;
+    padding-top: 4px;
+    font-size: 0.9rem;
 }
 .str-btn{
     padding: 10px 20px;
@@ -349,7 +341,12 @@ p{
     }
 
     /*story*/
-
+     .big{
+        display: none;
+     }
+     .two{
+        grid-template-columns: repeat(2,1fr);
+     }
 
 
     /*footer*/
