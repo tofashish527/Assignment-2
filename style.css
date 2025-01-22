@@ -121,7 +121,7 @@ p{
     margin-top: 10px;
 }
 .part{
-    width: 80%;
+    width:80%;
     align-items: center;
     margin: 0 auto;
     display: grid;
@@ -192,20 +192,23 @@ h2{
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
-    gap: 24px;
+    gap: 12px;
 }
 .big{
+    position: relative;
     height:580px;
     width: 540px;
+    overflow: hidden;
     justify-content: center;
     background-color: white;
     margin: 0 auto;
-    border-radius: 8px;
+    border-radius: 24px;
 }
-.st-img{
+.big img{
+    width: 100%;
+    height: 60%;
     object-fit: cover;
 }
-
 .two {
     height:580px;
     width: 620px;
@@ -216,24 +219,39 @@ h2{
     gap: 18px;
 }
 .card{
-    height:290px;
-    width:310px;
+    position: relative;
+    height:280px;
+    width:300px;
     justify-content: center;
     margin: 0 auto;
-    border-radius: 32px;
+    border-radius: 24px;
     padding: 0;
-    background-color: white; 
+    background-color: white;
+    overflow: hidden; 
 }
-
+.card img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
 .des{
     height: 50%;
-    text-align: justify;
     align-items: center;
+    margin: 0 auto;
+    margin-left: 20px;
+}
+.des h3{
+    font-size: 1.5rem;
+    text-align: justify;
 }
 h3,h4{
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 20px;
     font-size: 1.2rem;
+}
+.des h5{
+    padding-top: 30px;
+    font-size: 0.9rem;
 }
 p{
     padding-top: 4px;
@@ -245,6 +263,31 @@ p{
     color: white;
     border-radius: 40px;
     border: none; 
+    position: absolute;
+    top:60%;
+    left:20%;
+    z-index: 1;
+    transform: translate(-50%,-50%);
+}
+.card button{
+    padding: 10px 20px;
+    background-color: olivedrab;
+    color: white;
+    border-radius: 40px;
+    border: none; 
+    position: absolute;
+    top:60%;
+    left:35%;
+    z-index: 1;
+    transform: translate(-50%,-50%);
+}
+.layer-2{
+    padding-top: 50px;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
 }
 
 /*footer*/
@@ -276,7 +319,7 @@ p{
 }
 
 
-@media screen and (max-width:576px){
+@media screen and (max-width:650px){
     /* navbar */
     *{
         overflow-wrap: break-word;
@@ -345,9 +388,11 @@ p{
         display: none;
      }
      .two{
+        width: 100%;
+        overflow: hidden;
         grid-template-columns: repeat(2,1fr);
      }
-
+    
 
     /*footer*/
     .last{
